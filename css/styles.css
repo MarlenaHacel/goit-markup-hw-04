@@ -97,6 +97,7 @@ ul {
 .contact-icon {
   fill: var(--text-color);
   margin-right: 10px;
+  display: block;
 }
 .contact-links:hover,
 .contact-links:focus {
@@ -111,6 +112,7 @@ ul {
 
 .contact-links {
   display: flex;
+  align-items: center;
   color: var(--text-color);
   font-weight: 500;
   font-size: 14px;
@@ -124,14 +126,19 @@ ul {
   margin-right: 50px;
 }
 /* <-- First-section--> */
+
 .first-section {
-  background-image: linear-gradient(to bottom, var(--bg-image-color), var(--bg-image-color)),
+  background: var(--section-bg-primary);
+  padding: 0;
+}
+.first-section-bg {
+  background: linear-gradient(to bottom, var(--bg-image-color), var(--bg-image-color)),
     url(../images/first-section-bg.jpg);
+  background-size: 1600px 600px;
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  min-width: 1200px;
 }
 .first-section .container {
   display: flex;
@@ -167,7 +174,7 @@ ul {
 }
 .our-strength-icon {
   margin-bottom: 30px;
-  display: flex;
+  display: inline-block;
   justify-content: center;
   padding: 25px 100px;
   width: 270px;
@@ -239,11 +246,15 @@ ul {
   border-radius: 50%;
 }
 .our-team-icon {
+  display: block;
   padding: 12px;
   fill: var(--ikon-color);
 }
 .our-team-icon:hover,
 .our-team-icon:focus {
+  fill: var(--brand-color-white);
+}
+.our-team-social:focus .our-team-icon {
   fill: var(--brand-color-white);
 }
 .our-team-social:last-child {
@@ -261,8 +272,10 @@ ul {
   font-weight: 1.2;
   margin-bottom: 30px;
 }
+
 .icon {
   fill: var(--ikon-color);
+  display: inline-block;
   justify-content: center;
   margin-right: 30px;
   width: 170px;
@@ -343,6 +356,7 @@ ul {
   background-color: var(--brand-logo-color);
 }
 .social-icon {
+  display: block;
   fill: var(--brand-color-white);
   padding: 12px;
 }

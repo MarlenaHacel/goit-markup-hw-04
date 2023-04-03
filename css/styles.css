@@ -132,7 +132,7 @@ ul {
   padding: 0;
 }
 .first-section-bg {
-  background: linear-gradient(to bottom, var(--bg-image-color), var(--bg-image-color)),
+  background-image: linear-gradient(to bottom, var(--bg-image-color), var(--bg-image-color)),
     url(../images/first-section-bg.jpg);
   background-size: 1600px 600px;
   background-repeat: no-repeat;
